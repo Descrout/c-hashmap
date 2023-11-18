@@ -1,10 +1,10 @@
 # C Hashmap
 
 Hashmap implementation in C written for educational purposes.  
-Can only use "char*" as key.
+Can only use "char*" as key but anything as value "void*".
 
 ```c
-Hashmap* map = new_hashmap(/* Capactiy */ 100, &free_value);
+Hashmap* map = new_hashmap(/* Capactiy */ 100, /* free value callback */ &free_value);
 
 // Set
 hm_set_value(map, "asd", alloc_str("asd_val"));
