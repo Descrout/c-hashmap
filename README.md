@@ -14,7 +14,7 @@ hm_set_value(map, "zxc", alloc_str("zxc_val"));
 assert(map->length == 3);
 
 // Override
-// This also will call the free_value callback for the old value.
+// This also will call the free_value callback for the overriden value.
 hm_set_value(map, "asd", alloc_str("PogChamp"));
 
 assert(map->length == 3);
